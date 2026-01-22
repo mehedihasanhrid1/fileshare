@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogNinja Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body class="dashboard-body">
+
+    <header class="dash-header">
+        <h1>LogNinja Dashboard</h1>
+        <button id="logoutBtn" class="btn-danger">Logout</button>
+    </header>
+
+    <main class="dashboard-wrapper">
+
+        <section class="profile-card">
+            <h2>User Profile</h2>
+            <p><strong>Name:</strong> <span id="userName"></span></p>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+        </section>
+
+        <section class="password-card">
+            <h2>Change Password</h2>
+            <input type="password" id="newPassword" placeholder="New Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <button id="changePassBtn" class="btn-primary">Update Password</button>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-box">
+                <h3>Account Status</h3>
+                <p>Active</p>
+            </div>
+            <div class="info-box">
+                <h3>Security Level</h3>
+                <p>Standard</p>
+            </div>
+            <div class="info-box">
+                <h3>Last Login</h3>
+                <p>Today</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="dash-footer">© LogNinja.com</footer>
+
+    <script src="toast.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
